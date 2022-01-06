@@ -42,6 +42,17 @@
   --grey-800: #334155;
   --grey-900: #1e293b;
 
+  /* Base (Blue shades) */
+  --base-100: #ccccff;
+  --base-200: #9999ff;
+  --base-300: #6666ff;
+  --base-400: #3333ff;
+  --base-500: #0000ff;
+  --base-600: #0000cc;
+  --base-700: #000099;
+  --base-800: #000066;
+  --base-900: #000033;
+
   /* Primary (Blue shades) */
   --primary-100: #cde4fb;
   --primary-200: #9bcaf8;
