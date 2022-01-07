@@ -73,7 +73,7 @@ body {
 .footer {
   padding-bottom: 2rem;
   height: 330px;
-  background-color: var(--grey-300);
+  background-color: var(--grey-400);
   color: var(--dark-color);
 }
 
@@ -100,6 +100,7 @@ body {
   color: var(--grey-800);
 }
 
-.block {
-  display: block;
+.footer h3,
+.footer h1 {
+  font-family: var(--headingfont-8);
 }
