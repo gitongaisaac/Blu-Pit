@@ -45,11 +45,11 @@ body {
 
 /* showcase */
 .showcase {
-  margin: 0 auto;
-  padding: 20px;
-  /* width: var(--max-width-1); */
-  border-radius: 5px;
-  background-color: var(--grey-300);
+  margin: var(--font-size-8) auto;
+  padding: 40px;
+  width: var(--max-width-1);
+  border-radius: 20px;
+  background-color: var(--grey-400);
 }
 
 /* Tone */
@@ -61,8 +61,8 @@ body {
 /* Raw */
 .raw .card {
   width: 600px;
-  background-color: var(--low-500);
-  color: var(--light-color);
+  background-color: var(--grey-100);
+  color: var(--text-color);
 }
 
 .raw h2,
