@@ -53,13 +53,13 @@ body {
 
 /* Tone */
 .tone p {
-  width: 100%;
+  width: 700px;
   text-align: center;
 }
 
 /* Raw */
 .raw .card {
-  width: 600px;
+  width: 470px;
   background-color: var(--grey-100);
   color: var(--text-color);
 }
