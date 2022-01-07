@@ -487,6 +487,10 @@ i {
   width: 100%;
 }
 
+.btn-rounded {
+  border-radius: 40px;
+}
+
 .btn:hover {
   transform: scale(0.98);
 }
