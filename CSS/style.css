@@ -48,8 +48,7 @@ body {
   margin: var(--font-size-8) auto;
   padding: 40px;
   width: var(--max-width-1);
-  border-radius: 20px;
-  background-color: var(--grey-400);
+  background-color: var(--grey-300);
 }
 
 /* Tone */
@@ -72,6 +71,10 @@ body {
 
 /* Footer */
 .footer {
+  /* background-image: url("../images/Blog-9.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%; */
   height: 200px;
   background-color: var(--dark-color);
   color: var(--light-color);
