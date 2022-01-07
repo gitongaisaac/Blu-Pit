@@ -1,5 +1,7 @@
 .navbar {
-  background-image: url("images/logo-2.jpg");
+  /* background-image: url("../images/logo-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center; */
   /* background-color: #fff; */
   height: 70px;
 }
@@ -41,4 +43,5 @@
 .spin .card,
 .tone .card {
   width: 600px;
+  /* background-color: var(--primary-500); */
 }
