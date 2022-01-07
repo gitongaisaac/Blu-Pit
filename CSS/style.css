@@ -43,21 +43,22 @@ body {
   align-items: flex-start;
 }
 
-/* Tone */
-.tone {
-  background-color: var(--grey-500);
+/* showcase */
+.showcase {
+  margin: 0 auto;
+  padding: 20px;
+  /* width: var(--max-width-1); */
+  border-radius: 5px;
+  background-color: var(--grey-300);
 }
 
+/* Tone */
 .tone p {
   width: 100%;
   text-align: center;
 }
 
 /* Raw */
-.raw {
-  background-color: var(--grey-200);
-}
-
 .raw .card {
   width: 600px;
   background-color: var(--low-500);
