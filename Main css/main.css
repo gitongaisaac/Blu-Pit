@@ -86,6 +86,17 @@
   --tertiary-800: #664d51;
   --tertiary-900: #332629;
 
+  /* Low */
+  --low-100: #e1d9d9;
+  --low-200: #c3b3b3;
+  --low-300: #a48d8d;
+  --low-400: #866767;
+  --low-500: #684141;
+  --low-600: #533434;
+  --low-700: #3e2727;
+  --low-800: #2a1a1a;
+  --low-900: #150d0d;
+
   /* Stroke (green shades) */
   --stroke-100: #cce6cc;
   --stroke-200: #99cc99;
@@ -209,6 +220,33 @@
   /* Transitions */
   --transition-1: 0.2s ease-in-out all;
   --transition-2: 0.3s ease-in-out all;
+  --transition-3: 0.5s ease-in-out all;
+  --transition-4: transform 0.2s ease-in;
+  --transition-5: transform 0.3s ease-in;
+  --transition-6: transform 0.5s ease-in;
+
+  /* TRANSFORMS */
+  /* Transforms on the Y axes*/
+  --transform-11: translateY(-3px);
+  --transform-12: translateY(-5px);
+  --transform-13: translateY(-7px);
+  --transform-14: translateY(-10px);
+  /*  */
+  --transform-16: translateY(3px);
+  --transform-17: translateY(5px);
+  --transform-18: translateY(7px);
+  --transform-19: translateY(10px);
+
+  /* Transforms on the x axes */
+  --transform-21: translatex(-3px);
+  --transform-22: translatex(-5px);
+  --transform-23: translatex(-7px);
+  --transform-24: translatex(-10px);
+  /*  */
+  --transform-26: translatex(3px);
+  --transform-27: translatex(5px);
+  --transform-28: translatex(7px);
+  --transform-29: translatex(10px);
 
   /* Alerts */
   --alert-success: var(--stroke-400);
