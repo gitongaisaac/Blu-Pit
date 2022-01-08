@@ -45,23 +45,23 @@ body {
 
 /* showcase */
 .showcase {
-  margin: var(--font-size-8) auto;
+  margin: 4rem auto;
   padding: 40px;
-  width: var(--max-width-1);
   background-color: var(--grey-300);
 }
 
-/* Tone */
-.tone {
-  /* margin-bottom: 2rem; */
-}
-
-.tone p {
+.showcase p {
   width: 700px;
   text-align: center;
 }
 
 /* Raw */
+.raw {
+  margin: 4rem auto;
+  background-color: var(--grey-800);
+  width: var(--max-width-1);
+}
+
 .raw .card {
   width: 470px;
   background-color: var(--grey-100);
@@ -69,8 +69,35 @@ body {
 }
 
 .raw h2,
-.tone h2 {
+.showcase h2 {
   font-family: var(--headingfont-6);
+}
+
+/* rough */
+.rough h1 {
+  font-family: var(--font-size-10);
+  color: var(--secondary-900);
+}
+
+.rough p {
+  color: var(--stroke-800);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  gap: 30px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-head .grid {
+  align-items: center;
+}
+
+.show-head .img {
+  height: 350px;
 }
 
 /* Footer */
