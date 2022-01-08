@@ -6,7 +6,7 @@
 .navbar h1 {
   font-family: var(--headingfont-2);
   position: relative;
-  bottom: 5px;
+  bottom: 3px;
 }
 
 .navbar ul {
@@ -16,6 +16,15 @@
 .navbar ul a {
   color: var(--dark-color);
   padding: 10px;
+}
+
+.navbar nav a:hover {
+  border-bottom: 2px solid var(--grey-400);
+}
+
+.navbar .btn:hover {
+  background-color: var(--primary-500);
+  color: var(--light-color);
 }
 
 .navbar .border-left {
@@ -72,6 +81,7 @@
 .analytic .grid {
   grid-template-columns: repeat(3, 1fr);
   justify-self: space-between;
+  flex-wrap: wrap;
 }
 
 /* Span */
@@ -156,35 +166,47 @@
 /* Footer */
 .footer {
   padding-bottom: 2rem;
-  height: 330px;
+  padding-top: 3rem;
+  height: 650px;
   background-color: var(--grey-400);
   color: var(--dark-color);
+  font-family: var(--bodyfont-1);
 }
 
 .footer a {
   color: var(--dark-color);
 }
 
-.footer nav a {
-  margin-bottom: 10px;
-  padding-bottom: 10px;
+.footer a {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 .footer .flex {
   justify-content: space-between;
+  align-items: flex-start;
 }
 
-.social a {
+.footer .social a {
   transition: var(--transition-4);
   color: var(--dark-color);
 }
 
-.social a:hover {
+.footer .social a:hover {
   transform: var(--transform-11);
   color: var(--grey-800);
 }
 
 .footer h3,
 .footer h1 {
-  font-family: var(--headingfont-8);
+  font-family: var(--headingfont-5);
+}
+
+.copyright {
+  margin-top: 5rem;
+}
+
+.about p {
+  max-width: 300px;
+  font-family: var(--bodyfont-1);
 }
