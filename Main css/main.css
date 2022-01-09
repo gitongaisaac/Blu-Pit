@@ -249,8 +249,8 @@
   --transform-29: translatex(10px);
 
   /* Alerts */
-  --alert-success: var(--stroke-400);
-  --alert-error: var(--red-600);
+  --alert-success: var(--stroke-300);
+  --alert-error: var(--red-300);
 
   /* Box shadow*/
   --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
