@@ -188,7 +188,7 @@
 
 /* Languages */
 .languages .bg-2 {
-  background-color: var(--spin-200);
+  background-color: var(--grey-300);
   border-radius: 5px;
   margin-top: 1rem;
   padding: 3rem 3rem;
@@ -226,6 +226,11 @@
   gap: 30px;
   align-items: center;
   width: 250px;
+  transition: var(--transition-4);
+}
+
+.icon:hover {
+  transform: var(--transform-13);
 }
 
 .icon i {
