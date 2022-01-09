@@ -4,197 +4,252 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML cheat sheet</title>
+    <title>Blu-pit | Web Design Platfomr</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="Main css/normalize.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="Main css/main.css" />
   </head>
 
   <body>
-    <!-- Headings -->
-    <h1>Heading one</h1>
-    <h2>Heading two</h2>
-    <h3>Heading three</h3>
-    <h4>Heading four</h4>
-    <h5>Heading five</h5>
-    <h6>heading six</h6>
-
-    <a href="isaac.html">My blog page</a>
-    <hr />
-
-    <!-- paragraph -->
-    <p>
-      HTML stands for Hyper Text Markup Language
-      <strong
-        >HTML is the standard markuplanguage for creating Web pages</strong
-      >
-      HTML describes the structure of a Web page HTML consists of a series of
-      elements HTML elements tell the browser how&nbsp;to display the content
-      HTML elements label pieces of content such as "thisis a heading", "this is
-      a paragraph", "this is a link", etc. W3Schools is optimized for learning
-      and training.
-      <em
-        >might be simplified to improve reading and learning. Tutorials,
-        references, and examples are constantly reviewed to avoid errors, but we
-        cannot warrant full correctness of all content</em
-      >
-      . While using W3Schools, you agree to have read and accepted our terms of
-      use, cookie and privacy policy.
-    </p>
-
-    <p>
-      HTML (HyperText Markup Language) is the most basic building block of the
-      Web. It defines the meaning and structure of web content. Other
-      technologies besides HTML are generally used to describe a web page's
-      appearance/presentation (CSS) or functionality/behavior (JavaScript).
-      <a href="http://google.com" target="_blank">google</a>
-    </p>
-
-    <!-- list -->
-    <ul>
-      <li>CSS,</li>
-      <li>HTML</li>
-      <li>Javscript</li>
-      <li>Java</li>
-      <li>Python</li>
-    </ul>
-
-    <ol>
-      <li>CSS,</li>
-      <li>HTML</li>
-      <li>Javscript</li>
-      <li>Java</li>
-      <li>Python</li>
-    </ol>
-
-    <!-- Tables -->
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Age</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td>Brad Traversy</td>
-          <td>bradtraversy@smth.com</td>
-          <td>35</td>
-        </tr>
-
-        <tr>
-          <td>Jane Doe</td>
-          <td>janedoe@smth.com</td>
-          <td>20</td>
-        </tr>
-
-        <tr>
-          <td>sara Williams</td>
-          <td>sarawilliams@smth.com</td>
-          <td>16</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <br />
-    <hr />
-    <br />
-
-    <!-- forms -->
-    <form action="process.php" method="POST">
-      <div>
-        <label>First name</label>
-        <input type="text" name="first-name" placeholder="Enter first name" />
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="container-2">
+        <div class="flex flex-2">
+          <div class="flex">
+            <a href="#"><h1 class="top">Blu-pit</h1></a>
+            <nav>
+              <ul class="border-left">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#">Creation</a></li>
+                <li><a href="#">marketing</a></li>
+                <li><a href="#">code</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">support</a></li>
+                <li><a href="#">About us</a></li>
+              </ul>
+            </nav>
+          </div>
+          <a href="#" class="btn btn-thin btn-outline btn-rounded btn-lg-x"
+            >Log in</a
+          >
+        </div>
       </div>
+    </nav>
 
-      <br />
+    <!-- Showcase -->
+    <section class="showcase">
+      <h2>
+        An image of all sizes of computers showing the same website to
+        demostrate responsiveness
+      </h2>
+    </section>
 
-      <div>
-        <label>Last name</label>
-        <input type="text" name="lastName" />
+    <section class="analytic">
+      <div class="container-4 text-center">
+        <div class="grid">
+          <div>
+            <i class="fas fa-cloud-upload-alt fa-3x"></i>
+            <h2>deploy</h2>
+            <p>
+              We help you build a website, and deploy it through our website.
+              Over 1 million websites deployed on blu-pit.
+            </p>
+          </div>
+          <div>
+            <i class="fas fa-comments-dollar fa-3x"></i>
+            <h2>marketing</h2>
+            <p>
+              Blu-pit lets you market your websites using its services. Checkout
+              our marketing graph at the marketing section.
+            </p>
+          </div>
+          <div>
+            <i class="fas fa-file-invoice-dollar fa-3x"></i>
+            <h2>Portfolio</h2>
+            <p>
+              Blu-pit provides templates to bulid portfolios. Chose your own
+              template from the hundred that exist on our platform. Unique and
+              formal.
+            </p>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <br />
-
-      <div>
-        <label>Email</label>
-        <input type="email" name="email" />
+    <!-- show-head -->
+    <section class="show-head">
+      <div class="container-2 grid text-center">
+        <div class="head-info">
+          <h1>Custom Domains</h1>
+          <p class="lead">
+            Start building with us. Get a personalized domain name that matches
+            your brand and business.
+          </p>
+          <a href="#" class="btn btn-md btn-outline btn-rounded">Start now</a>
+        </div>
+        <img src="./images/code13.jpg" alt="" class="img" />
       </div>
+    </section>
 
-      <br />
-
-      <div>
-        <label>message</label>
-        <textarea name="message"></textarea>
+    <!-- Span -->
+    <section class="span">
+      <div class="container-2 py-3 text-center">
+        <h1 class="top-2 xl">Start Building</h1>
+        <p class="lead">
+          Create your own website with us today and deploy. Over 3 billion
+          people using our platform today. Don't be left out, obtain your
+          membership. Log in to access our full packages.
+        </p>
+        <a class="btn btn-md btn-secondary btn-rounded lead" href="#"
+          >Get started</a
+        >
       </div>
+    </section>
 
-      <br />
-
-      <div>
-        <label>Gender</label>
-        <select name="gender">
-          <option value="male">male</option>
-          <option value="female">female</option>
-          <option value="other">other</option>
-        </select>
+    <!-- respond -->
+    <section class="respond">
+      <div class="container-2 grid text-center">
+        <img src="./images/code6.jpg" alt="" class="img" />
+        <div>
+          <h1>Responsive</h1>
+          <p class="lead">
+            Your do not have ot struggle, our templates are media responsive;
+            They fit in all kinds of screens.
+          </p>
+        </div>
       </div>
+    </section>
 
-      <br />
-
-      <div>
-        <label>age:</label>
-        <input type="number" name="age" value="30" />
+    <!-- stats -->
+    <section class="stats">
+      <div class="text-center py-2">
+        <h1>Make your ideas come to life with us</h1>
+        <p class="lead">
+          Blu-pit for all. We've got it all covered for you. Quick access to all
+          our services Try out our free domo. We have got amazing templates for
+          you to try.
+        </p>
+        <a
+          href=""
+          class="btn btn-thin btn-transparent lead btn-rounded btn-lg-x"
+          >Demo</a
+        >
       </div>
+    </section>
 
-      <br />
-
-      <div>
-        <label>Birthday</label>
-        <input type="date" name="dirthday" />
+    <!-- info -->
+    <section class="info">
+      <div class="container-2 grid">
+        <div class="text-center">
+          <h1>Provision</h1>
+          <p class="lead">
+            We help you create, deploy and market your ideas. Checkout our
+            classes to get started on web development from biginner to pro
+          </p>
+          <a href="#" class="btn btn-md btn-rounded btn-primary lead"
+            >classes</a
+          >
+        </div>
+        <img src="./images/code19.jpg" alt="" class="img" />
       </div>
+    </section>
 
-      <br />
+    <!-- research -->
+    <section class="research">
+      <div class="container-2 text-center">
+        <h1>Find out what is missing in the market</h1>
+        <p class="lead">
+          Open our research page and find out what is missing in the market from
+          our marketing statistics. Find the mindblowing ideas that have not yet
+          been expored and a tone of problems that are waiting for you to solve
+          them.
+        </p>
+        <a href="#" class="btn btn-md btn-rounded btn-secondary lead"
+          >Research</a
+        >
+      </div>
+    </section>
 
-      <input type="submit" name="submit" value="Submit" />
-    </form>
+    <section class="end"></section>
 
-    <!-- Button-->
-    <br />
-    <button>Click me</button>
-    <br />
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container-2 flex">
+        <nav class="services">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#">MyHome.com</a></li>
+            <li><a href="#">Templates</a></li>
+            <li><a href="#">Website buider</a></li>
+            <li><a href="#">web Domains</a></li>
+            <li><a href="#">Online Real Estate</a></li>
+            <li><a href="#">Online store</a></li>
+            <li><a href="#">Creat a blog</a></li>
+            <li><a href="#">Freelance jobs</a></li>
+            <li><a href="#">Website marketing</a></li>
+            <li><a href="#">Portfolio Design</a></li>
+            <li><a href="#">website Design</a></li>
+            <li><a href="#">Web hosting</a></li>
+          </ul>
+        </nav>
 
-    <br />
+        <nav>
+          <h3>Quick links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Classes</a></li>
+            <li><a href="#">Creation</a></li>
+            <li><a href="#">marketing</a></li>
+            <li><a href="#">code</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">support</a></li>
+            <li><a href="#">About us</a></li>
+          </ul>
+        </nav>
 
-    <!-- Images -->
-    <a href="images/IMG_20200922_100133.jpg">
-      <img
-        src="images/IMG_20200922_100133.jpg"
-        alt="am image of me"
-        width="200"
-      />
-    </a>
+        <nav class="community">
+          <h3>community</h3>
+          <ul>
+            <li><a href="#">Blu-pit blog</a></li>
+            <li><a href="#">Blu-pit marketplace</a></li>
+            <li><a href="#">student website</a></li>
+            <li><a href="#">Partner community</a></li>
+          </ul>
+        </nav>
 
-    <!-- Quotations -->
-    <blockquote cite="http://traversy media.com">
-      We will spend the first chapter looking at how HTML is used to create web
-      pages. You will see that you start by writing down the words you want to
-      appear on your page. You then add tags or elements to the words so that
-      the browser knows what is a heading, where a paragraph begins and ends,
-      and so on. The rest of this section introduces the tags you have at your
-      disposal to create web pages, grouped into chapters on: text, lists,
-      links, images, tables, forms, video audio and flash, and miscellaneous
-      elements. I should warn you that the examples in the first nine chapters
-      are not exciting to look at, yet they are the foundation of every web
-      page. The following chapters on CSS will show you how to make your pages
-      look a lot more interesting. Many web pages act like electronic versions
-      of these documents. For example, newspapers show the same stories in print
-      as they do on websites; you can apply for insurance over the web; and
-      stores have online catalogs and e-commerce facilities.
-    </blockquote>
+        <div class="about">
+          <h3>Blu-Pit</h3>
+          <p>
+            Blu-pit.com is a leading cloud-based development platform with
+            millions of users worldwide. We make it easy for everyone to create
+            a beautiful, professional web presence.
+            <br />
+            <br />
+            Promote your business, showcase your art, set up an online shop or
+            just test out new ideas. The Blu-pit website builder has everything
+            you need to create a fully personalized, high-quality free website.
+          </p>
+        </div>
 
-    <p>The <abbr title="World wide Web"> WWW</abbr> is awesome</p>
-
-    <p><cite>HTML crash course</cite> by Brad Traversy</p>
+        <div class="social">
+          <h3>Follow us</h3>
+          <a href="#"><i class="fab fa-github fa-2x"></i></a>
+          <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          <div class="copyright">
+            <a href="#"><h1 class="top">Blu-pit</h1></a>
+            <p class="top">Copyright &copy; 2017, MyWebsite</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
