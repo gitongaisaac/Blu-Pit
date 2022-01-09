@@ -713,11 +713,11 @@ i {
 }
 
 .my-4 {
-  margin: var(--font-size-8) 0;
+  margin: var(--font-size-8) auto;
 }
 
 .my-5 {
-  margin: var(--font-size-10) 0;
+  margin: var(--font-size-10) auto;
 }
 
 .m-1 {
