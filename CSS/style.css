@@ -112,16 +112,6 @@
   font-family: var(--headingfont-2);
 }
 
-/* respond */
-.respond {
-  background-color: var(--grey-400);
-}
-
-.respond h1 {
-  font-family: var(--headingfont-4);
-  font-size: var(--font-size-10);
-}
-
 /* Demo */
 .demo .bg {
   background-color: var(--low-100);
@@ -186,6 +176,16 @@
   font-family: var(--headingfont-2);
 }
 
+/* respond */
+.respond {
+  background-color: var(--grey-200);
+}
+
+.respond h1 {
+  font-family: var(--headingfont-4);
+  font-size: var(--font-size-10);
+}
+
 /* Languages */
 .languages .bg-2 {
   background-color: var(--grey-300);
@@ -212,10 +212,6 @@
 .languages .grid {
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
-}
-
-.languages .lang .grid {
-  align-items: center;
 }
 
 .icon {
