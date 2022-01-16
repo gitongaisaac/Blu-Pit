@@ -1,31 +1,37 @@
 /* Navbar */
-.navbar {
+.navbar,
+.navbar-respond {
   background-color: var(--light-color);
 }
 
-.navbar h1 {
+.navbar h1,
+.navbar-respond h1 {
   font-family: var(--headingfont-2);
   position: relative;
   bottom: 3px;
 }
 
-.navbar ul {
+.navbar ul,
+.navbar-respond ul {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.navbar ul a {
+.navbar ul a,
+.navbar-respond ul a {
   color: var(--dark-color);
   padding: 10px;
 }
 
-.navbar nav a:hover {
+.navbar nav a:hover,
+.navbar-respond nav a:hover {
   border-bottom: 2px solid var(--grey-400);
 }
 
-.navbar .btn:hover {
+.navbar .btn:hover,
+.navbar-respond .btn:hover {
   background-color: var(--primary-500);
   color: var(--light-color);
-  border-color: var(--red-500);
 }
 
 .navbar .border-left {
@@ -39,6 +45,33 @@
 
 .navbar .flex-2 {
   justify-content: space-between;
+}
+
+/* Navbar Respond */
+.navbar-respond {
+  display: none;
+  height: 200px;
+  padding: 20px 0;
+  overflow: auto;
+}
+
+.navbar-respond .flex {
+  justify-content: space-between;
+  margin: auto;
+  max-width: 700px;
+}
+
+.navbar-respond .block {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 10px;
+  background-color: var(--grey-200);
+  border-radius: 40px;
+}
+
+.navbar-respond .shade {
+  background-color: var(--grey-900);
 }
 
 /* Showcase */
@@ -278,8 +311,59 @@
 }
 
 /* Media queries and reponsiveness */
-/* @media (max-width: 1105px) {
+@media (max-width: 1105px) {
+  .navbar-respond {
+    display: inherit;
+  }
+
   .navbar {
     display: none;
   }
-} */
+}
+
+@media (max-width: 945px) {
+  .grid,
+  .show-head .grid,
+  .demo .grid,
+  .info .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .demo .grid .form {
+    justify-self: center;
+  }
+
+  .languages .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .footer {
+    height: 1100px;
+  }
+}
+
+@media (max-width: 710px) {
+  .navbar-respond {
+    height: 250px;
+  }
+}
+
+@media (max-width: 655px) {
+  .languages .icon {
+    display: block;
+    width: 150px;
+  }
+}
+
+@media (max-width: 620px) {
+  .footer {
+    height: 1400px;
+  }
+}
+
+@media (max-width: 565px) {
+  .demo .form {
+    width: 400px;
+  }
+}
