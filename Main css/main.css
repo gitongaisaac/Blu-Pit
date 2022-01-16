@@ -357,24 +357,28 @@ i {
   max-width: var(--max-width-1);
   overflow: auto;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .container-2 {
   max-width: var(--max-width-2);
   overflow: auto;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .container-3 {
   max-width: var(--max-width-3);
   overflow: auto;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .container-4 {
   max-width: var(--max-width-4);
   overflow: auto;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* Top */

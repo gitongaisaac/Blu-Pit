@@ -59,6 +59,7 @@
 
 /* Analytic */
 .analytic {
+  flex-wrap: wrap;
   margin: 5rem 0;
 }
 
@@ -77,12 +78,6 @@
   border-radius: 50%;
   color: var(--light-color);
   background-color: var(--primary-600);
-}
-
-.analytic .grid {
-  grid-template-columns: repeat(3, 1fr);
-  justify-self: space-between;
-  flex-wrap: wrap;
 }
 
 /* Span */
@@ -281,3 +276,10 @@
   max-width: 300px;
   font-family: var(--bodyfont-1);
 }
+
+/* Media queries and reponsiveness */
+/* @media (max-width: 1105px) {
+  .navbar {
+    display: none;
+  }
+} */
