@@ -266,6 +266,25 @@
   --text-color: var(--dark-color);
 }
 
+/* Scrollbar */
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--body-color); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--grey-700); /* color of the scroll thumb */
+  border-radius: 50px; /* roundness of the scroll thumb */
+  border: 3px solid var(--grey-300); /* creates padding around scroll thumb */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--grey-600);
+}
+
 html {
   font-size: 100%;
 }
@@ -324,7 +343,7 @@ p {
 }
 
 a {
-  display: inline-block; /* */
+  /* display: inline-block;  */
   cursor: pointer;
   text-decoration: none;
   color: var(--link-color); /* */

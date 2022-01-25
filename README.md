@@ -1,6 +1,21 @@
-This is a practice website that i created to improve my skills on html and css.
-It uses a variety of styles including images, flexbox, CSS grid and more.
-The project also uses my main css file: This is my file that contains all the global styles that i use in almost all my prject. You can checkout the file in the Default repo.
-The project is a website that offers hosting services, programming learning classes, marketing of websites for it's community, Portfolio servieces: it containes a bunch of templates that a member can use to create his/her own portfolio, Although all this is just fake since it does not do all that but that is basically its description.
-The website has only one name for now; the home page. I might create more pages in the future to keep sharpening my skills.
-Initially this was a plain html learning repo but decided to style it make it to something more after learning css and creating my main classes.
+# Blu-pit
+
+This is a fake web design platform.
+
+It is the second website i created after creating Loruki website; you can find it in my repos.
+
+It was just to confirm that i was good in CSS. It if fully responsive however there are some minor hitches at this point, but it will be okay in a few.
+
+After i have fixed the hitches i will deploy the website on netlify and provide the link for the same. It has only the home page but after some time i will add other pages.
+
+---
+
+## Topics
+
+Some of the major features covered in the creation of this website are:
+
+- CSS Flexbox
+- CSS Grids
+- HTML Froms
+- Images
+- Bacground images and more.

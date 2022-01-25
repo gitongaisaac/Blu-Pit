@@ -6,7 +6,8 @@
 
 .navbar h1,
 .navbar-respond h1 {
-  font-family: var(--headingfont-2);
+  font-family: var(--fancyfont-3);
+  color: var(--low-600);
   position: relative;
   bottom: 3px;
 }
