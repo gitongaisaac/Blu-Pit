@@ -11,6 +11,14 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/3ca0c365cd.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"
+    /> -->
     <link rel="stylesheet" href="Main css/normalize.css" />
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="Main css/main.css" />
@@ -30,14 +38,12 @@ BODY
 Navbar section
 ================================================================================================================================
 -->
-
-    <!-- navbar -->
-    <section class="navbar">
-      <div class="container-2">
+    <nav class="navbar">
+      <div class="container-3">
         <div class="flex flex-2">
           <div class="flex">
             <a href="#"><h1 class="top">Blu-pit</h1></a>
-            <nav>
+            <div>
               <ul class="border-left">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Classes</a></li>
@@ -48,61 +54,61 @@ Navbar section
                 <li><a href="#">support</a></li>
                 <li><a href="#">About us</a></li>
               </ul>
-            </nav>
+            </div>
           </div>
-          <a href="#" class="btn btn-thin btn-outline btn-rounded btn-lg-x"
-            >Log in</a
-          >
+          <a href="#" class="btn btn-xw btn-outline btn-rounded">Log in</a>
         </div>
       </div>
-    </section>
+    </nav>
 
     <!--
 ================================================================================================================================
 Navbar-respond section
 ================================================================================================================================
 -->
-
-    <!-- navbar-respons -->
-    <section class="navbar-respond">
-      <div class="container-2">
+    <nav class="navbar-respond">
+      <div class="container-3">
         <div class="flex">
           <a href="#"><h1 class="top">Blu-pit</h1></a>
-          <a href="#" class="btn btn-thin btn-outline btn-rounded btn-lg-x"
-            >Log in</a
-          >
+          <div class="dashes">
+            <a href="#" class="btn btn-xw btn-outline btn-rounded">Log in</a>
+            <i class="fa-solid fa-align-justify fa-2x hide"></i>
+          </div>
         </div>
         <div class="block">
-          <nav>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Classes</a></li>
-              <li><a href="#">Creation</a></li>
-              <li><a href="#">marketing</a></li>
-              <li><a href="#">code</a></li>
-              <li><a href="#">Resources</a></li>
-              <li><a href="#">support</a></li>
-              <li><a href="#">About us</a></li>
-            </ul>
-          </nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Classes</a></li>
+            <li><a href="#">Creation</a></li>
+            <li><a href="#">marketing</a></li>
+            <li><a href="#">code</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">support</a></li>
+            <li><a href="#">About us</a></li>
+          </ul>
         </div>
       </div>
-    </section>
+    </nav>
 
     <!--
 ================================================================================================================================
 Showcase section
 ================================================================================================================================
 -->
-
-    <!-- Showcase -->
-    <section class="showcase">
-      <h2>
-        An image of all sizes of computers showing the same website to
-        demostrate responsiveness
-      </h2>
+    <section class="container-4">
+      <div class="showcase bg-img">
+        <h2>
+          An image of all sizes of computers showing the same website to
+          demostrate responsiveness
+        </h2>
+      </div>
     </section>
 
+    <!--
+================================================================================================================================
+Analytic
+================================================================================================================================
+-->
     <section class="analytic">
       <div class="container-4 text-center">
         <div class="flex">
@@ -140,11 +146,9 @@ Showcase section
 stats section
 ================================================================================================================================
 -->
-
-    <!-- show-head -->
     <section class="show-head">
-      <div class="container-2 grid text-center">
-        <div class="head-info">
+      <div class="container-2 grid">
+        <div class="head-info text-center">
           <h1>Custom Domains</h1>
           <p class="lead">
             Start building with us. Get a personalized domain name that matches
@@ -161,17 +165,17 @@ stats section
 Span section
 ================================================================================================================================
 -->
-
-    <!-- Span -->
     <section class="span">
-      <div class="container-2">
-        <div class="container-2 py-3 text-center">
+      <div class="container-2 py-3">
+        <div class="text-center">
           <h1 class="top-2 xl">Start Building</h1>
-          <p class="lead">
-            Create your own website with us today and deploy. Over 3 billion
-            people using our platform today. Don't be left out, obtain your
-            membership. Log in to access our full packages.
-          </p>
+          <div class="width">
+            <p class="lead">
+              Create your own website with us today and deploy. Over 3 billion
+              people using our platform today. Don't be left out, obtain your
+              membership. Log in to access our full packages.
+            </p>
+          </div>
           <a class="btn btn-md btn-secondary btn-rounded lead" href="#"
             >Get started</a
           >
@@ -184,26 +188,26 @@ Span section
 Demo section
 ================================================================================================================================
 -->
-
-    <!-- Demo -->
-    <section class="demo">
-      <div class="container-1 my-5">
+    <section class="demo my-5">
+      <div class="container-1">
         <div class="bg">
-          <div class="plain"></div>
+          <img src="/images/code9.jpg" alt="" class="img" />
+          <!-- <div class="plain"></div> -->
           <h1 class="top-2 text-center">Become a member of our society</h1>
           <div class="grid">
-            <div class="">
+            <div class="demo-details">
               <h2 class="text-center">Register</h2>
               <p>
+                <i class="fa-solid fa-pencil"></i>
                 By filling this form you become a member of our community and
                 get free access to all our services. You also get access to all
                 our custom templates.
                 <br />
-                <br />
+                <i class="fa-solid fa-pencil"></i>
                 If you are a Freelancer you get Priorities when Blu-Pit is
                 assiging freelance jobs from our eligible clients.
                 <br />
-                <br />
+                <i class="fa-solid fa-pencil"></i>
                 For those who are just biginning to learn coding, By joining us,
                 you get access to special ulities an classes to make it easier
                 for you to learn.
@@ -247,20 +251,18 @@ Demo section
 stats section
 ================================================================================================================================
 -->
-
-    <!-- stats -->
     <section class="stats">
       <div class="container-4">
         <div class="text-center py-2">
           <h1>Make your ideas come to life with us</h1>
-          <p class="lead">
-            Blu-pit for all. We've got it all covered for you. Quick access to
-            all our services Try out our free domo. We have got amazing
-            templates for you to try.
-          </p>
-          <a
-            href=""
-            class="btn btn-thin btn-transparent lead btn-rounded btn-lg-x"
+          <div class="width">
+            <p class="lead">
+              Blu-pit for all. We've got it all covered for you. Quick access to
+              all our services Try out our free domo. We have got amazing
+              templates for you to try.
+            </p>
+          </div>
+          <a href="" class="btn btn-xw btn-transparent lead btn-rounded"
             >Demo</a
           >
         </div>
@@ -272,21 +274,21 @@ stats section
 Info section
 ================================================================================================================================
 -->
-
-    <!-- info -->
     <section class="info">
-      <div class="container-2 grid">
-        <div class="text-center">
-          <h1>Provision</h1>
-          <p class="lead">
-            We help you create, deploy and market your ideas. Checkout our
-            classes to get started on web development from biginner to pro
-          </p>
-          <a href="#" class="btn btn-md btn-rounded btn-primary lead"
-            >classes</a
-          >
+      <div class="container-2">
+        <div class="grid">
+          <div class="text-center">
+            <h1>Provision</h1>
+            <p class="lead">
+              We help you create, deploy and market your ideas. Checkout our
+              classes to get started on web development from biginner to pro
+            </p>
+            <a href="#" class="btn btn-xw btn-rounded btn-primary lead"
+              >classes</a
+            >
+          </div>
+          <img src="./images/template2.webp" alt="" class="img" />
         </div>
-        <img src="./images/code19.jpg" alt="" class="img" />
       </div>
     </section>
 
@@ -295,17 +297,17 @@ Info section
 Research section
 ================================================================================================================================
 -->
-
-    <!-- research -->
     <section class="research">
       <div class="container-2 text-center">
         <h1>Find out what is missing in the market</h1>
-        <p class="lead">
-          Open our research page and find out what is missing in the market from
-          our marketing statistics. Find the mindblowing ideas that have not yet
-          been expored and a tone of problems that are waiting for you to solve
-          them.
-        </p>
+        <div class="width">
+          <p class="lead">
+            Open our research page and find out what is missing in the market
+            from our marketing statistics. Find the mindblowing ideas that have
+            not yet been expored and a tone of problems that are waiting for you
+            to solve them.
+          </p>
+        </div>
         <a href="#" class="btn btn-md btn-rounded btn-secondary lead"
           >Research</a
         >
@@ -319,18 +321,21 @@ Respond section
 -->
 
     <!-- respond -->
-    <!-- <section class="respond">
-      <div class="container-2 grid text-center">
-        <img src="./images/code6.jpg" alt="" class="img" />
-        <div>
-          <h1>Responsive</h1>
-          <p class="lead">
-            Your do not have ot struggle, our templates are all media
-            responsive; They fit in all kinds of screens.
-          </p>
+    <section class="respond">
+      <div class="container-2 text-center">
+        <div class="grid">
+          <img src="./images/template1.webp" alt="" class="img" />
+          <div>
+            <h1>Blu Pit Helps Team Work Move Forward</h1>
+            <p class="lead">
+              Collaborate, manage projects, and reach new productivity peaks.
+              From high rises to the home office, the way your team works is
+              unique. Accomplish it all with Blu-Pit
+            </p>
+          </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!--
 ================================================================================================================================
@@ -339,11 +344,8 @@ Languages section
 -->
 
     <!-- languages -->
-    <section class="languages">
-      <!-- <div class="lang-img"> -->
-      <!-- <img src="./images/lang.png" alt="" class="img" /> -->
-      <!-- </div> -->
-      <div class="container-1 my-5">
+    <section class="languages my-5">
+      <div class="container-1">
         <div class="bg-2">
           <h1 class="text-center top">Supported Languages</h1>
           <div class="lang grid text-center">
@@ -478,10 +480,24 @@ Footer
 
         <div class="social">
           <h3>Follow us</h3>
-          <a href="#"><i class="fab fa-github fa-2x"></i></a>
-          <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-          <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="https://github.com/isaac-gie" target="blank"
+            ><i class="fab fa-github fa-2x"></i
+          ></a>
+
+          <a
+            href="https://www.linkedin.com/in/gitonga-isaac-699592235/"
+            target="blank"
+            ><i class="fa-brands fa-linkedin fa-2x"></i
+          ></a>
+
+          <a href="https://www.instagram.com/gie_kay_/" target="blank"
+            ><i class="fab fa-instagram fa-2x"></i
+          ></a>
+
+          <a href="https://twitter.com/_gitonga_isaac" target="blank"
+            ><i class="fab fa-twitter fa-2x"></i
+          ></a>
+
           <div class="copyright">
             <a href="#"><h1 class="top">Blu-pit</h1></a>
             <p class="top">Copyright &copy; 2022, Blu-Pit</p>
@@ -489,5 +505,7 @@ Footer
         </div>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

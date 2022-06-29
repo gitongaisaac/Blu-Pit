@@ -1,17 +1,24 @@
+/* 
+================================================================================================================================
+FONT IMPORTS
+================================================================================================================================
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Neuton:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Neuton:wght@200&family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Neuton:wght@200&family=Roboto:wght@300&family=Sanchez&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Neuton:wght@200&family=Prata&family=Roboto:wght@300&family=Sanchez&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Karma:wght@500&family=Neuton:wght@200&family=Prata&family=Roboto:wght@300&family=Sanchez&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karma:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Trirong&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Taviraj&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Taviraj:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Eczar&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
@@ -29,8 +36,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Lateef&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
 
+/* 
+================================================================================================================================
+ROOT
+================================================================================================================================
+*/
+
 :root {
-  /* COLORS */
+  /* 
+================================================================================================================================
+Colors || Grey, base, shade, primary, secondary, tertiary, faded, sip, gin, low, stroke, ting, block, vet, spin, split, flip, red,
+================================================================================================================================
+*/
+
   /* Grey shades*/
   --grey-100: #f8fafc;
   --grey-200: #f1f5f9;
@@ -39,8 +57,39 @@
   --grey-500: #94a3b8;
   --grey-600: #64748b;
   --grey-700: #475569;
-  --grey-800: #334155;
+  --grey-800: #344256;
   --grey-900: #1e293b;
+
+  /* complement */
+  --complement-10: #fbfbfb;
+  --complement-20: #f8f6f7;
+  --complement-30: #f4f2f3;
+  --complement-40: #f0edef;
+  --complement-50: #ede9ec;
+  --complement-60: #e9e4e8;
+  --complement-70: #e5e0e4;
+  --complement-80: #e1dbe0;
+  --complement-90: #ded7dc;
+  --complement-100: #dad2d8;
+  --complement-200: #c4bdc2;
+  --complement-300: #aea8ad;
+  --complement-400: #999397;
+  --complement-500: #837e82;
+  --complement-600: #6d696c;
+  --complement-700: #575456;
+  --complement-800: #413f41;
+  --complement-900: #2c2a2b;
+
+  /* tone */
+  --tone-100: #ffffff;
+  --tone-200: #d3d4da;
+  --tone-300: #a7a9b5;
+  --tone-400: #7b7f90;
+  --tone-500: #4f546b;
+  --tone-600: #232946;
+  --tone-700: #1c2138;
+  --tone-800: #15192a;
+  --tone-900: #0e101c;
 
   /* Base (Blue shades) */
   --base-100: #ccccff;
@@ -53,6 +102,17 @@
   --base-800: #000066;
   --base-900: #000033;
 
+  /* Shade */
+  --shade-100: #dce5fe;
+  --shade-200: #b8cbfc;
+  --shade-300: #95b2fb;
+  --shade-400: #7198f9;
+  --shade-500: #4e7ef8;
+  --shade-600: #3e65c6;
+  --shade-700: #2f4c95;
+  --shade-800: #1f3263;
+  --shade-900: #101932;
+
   /* Primary (Blue shades) */
   --primary-100: #cde4fb;
   --primary-200: #9bcaf8;
@@ -64,7 +124,7 @@
   --primary-800: #02315f;
   --primary-900: #01182f;
 
-  /* Tecondary (purple shades) */
+  /* Secondary (purple shades) */
   --secondary-100: #e2e0ff;
   --secondary-200: #c1beff;
   --secondary-300: #a29dff;
@@ -85,6 +145,50 @@
   --tertiary-700: #99737a;
   --tertiary-800: #664d51;
   --tertiary-900: #332629;
+
+  /* faded */
+  --faded-100: #fbe1df;
+  --faded-200: #f8c3bf;
+  --faded-300: #f4a69e;
+  --faded-400: #f1887e;
+  --faded-500: #ed6a5e;
+  --faded-600: #be554b;
+  --faded-700: #8e4038;
+  --faded-800: #5f2a26;
+  --faded-900: #2f1513;
+
+  /* Lit */
+  --lit-100: #ffffff;
+  --lit-200: #ffe1cc;
+  --lit-300: #ffa466;
+  --lit-400: #ff8533;
+  --lit-500: #ff6700;
+  --lit-600: #cc5200;
+  --lit-700: #993e00;
+  --lit-800: #662900;
+  --lit-900: #331500;
+
+  /* Sip */
+  --sip-100: #f7e6ed;
+  --sip-200: #eecddb;
+  --sip-300: #e6b3ca;
+  --sip-400: #dd9ab8;
+  --sip-500: #d581a6;
+  --sip-600: #aa6785;
+  --sip-700: #804d64;
+  --sip-800: #553442;
+  --sip-900: #2b1a21;
+
+  /* gin */
+  --gin-100: #ccffff;
+  --gin-200: #99ffff;
+  --gin-300: #66ffff;
+  --gin-400: #33ffff;
+  --gin-500: #00ffff;
+  --gin-600: #00cccc;
+  --gin-700: #009999;
+  --gin-800: #006666;
+  --gin-900: #003333;
 
   /* Low */
   --low-100: #e1d9d9;
@@ -108,6 +212,39 @@
   --stroke-800: #003300;
   --stroke-900: #001a00;
 
+  /* Tint */
+  --tint-100: #dbffe7;
+  --tint-200: #b8ffd0;
+  --tint-300: #94ffb8;
+  --tint-400: #71ffa1;
+  --tint-500: #4dff89;
+  --tint-600: #3ecc6e;
+  --tint-700: #2e9952;
+  --tint-800: #1f6637;
+  --tint-900: #0f331b;
+
+  /* Block */
+  --block-100: #ddefeb;
+  --block-200: #bbded6;
+  --block-300: #99cec2;
+  --block-400: #77bdad;
+  --block-500: #55ad99;
+  --block-600: #448a7a;
+  --block-700: #33685c;
+  --block-800: #22453d;
+  --block-900: #11231f;
+
+  /* Vet */
+  --vet-100: #ecf8e9;
+  --vet-200: #daf1d3;
+  --vet-300: #c7ebbe;
+  --vet-400: #b5e4a8;
+  --vet-500: #a2dd92;
+  --vet-600: #82b175;
+  --vet-700: #618558;
+  --vet-800: #41583a;
+  --vet-900: #202c1d;
+
   /* Spin (orange shades) */
   --spin-100: #ffedcc;
   --spin-200: #ffdb99;
@@ -130,6 +267,17 @@
   --split-800: #666600;
   --split-900: #333300;
 
+  /* Flip */
+  --flip-100: #f4eed5;
+  --flip-200: #e9ddab;
+  --flip-300: #dfcc81;
+  --flip-400: #d4bb57;
+  --flip-500: #c9aa2d;
+  --flip-600: #a18824;
+  --flip-700: #79661b;
+  --flip-800: #504412;
+  --flip-900: #282209;
+
   /* Red */
   --red-100: #ffcccc;
   --red-200: #ff9999;
@@ -141,39 +289,49 @@
   --red-800: #660000;
   --red-900: #330000;
 
-  /* Dark and light */
+  /* Other colors */
+  --background-color: var(--grey-100);
   --dark-color: #000000;
+  --text-color: var(--dark-color);
+  --bg-dark: #002240;
+  --less-dark: #333;
   --light-color: #ffffff;
+  --link-color: #0000ff;
+  --flex-color: #fffffb;
 
-  /* link color */
-  --link-color: #0000ff; /* */
+  /* 
+================================================================================================================================
+Fonts (Heading, body and fancy fonts)
+================================================================================================================================
+*/
 
   /*Heading fonts */
-  --headingfont-1: "Neuton", sans-serif; /* */ /* */
-  --headingfont-2: "Prata", sans-serif;
-  --headingfont-3: "Lato", sans-serif; /* */ /* */
+  --headingfont-1: "Neuton", sans-serif; /* light */ /* */
+  --headingfont-2: "Prata", sans-serif; /* heavy */
+  --headingfont-3: "Lato", sans-serif; /* Light */ /* */
   --headingfont-4: "Cormorant Garamond", sans-serif; /* */ /* */
   --headingfont-5: "Gentium Basic", sans-serif; /* */ /* */
   --headingfont-6: "Trirong", sans-serif; /* */
   --headingfont-7: "Proza Libre", sans-serif;
   --headingfont-8: "Libre Franklin", sans-serif;
-  --headingfont-9: "Work Sans", sans-serif;
+  --headingfont-9: "Work Sans", sans-serif; /* */ /* */
   --headingfont-10: "Montserrat", sans-serif;
   --headingfont-11: "Josefin Sans", sans-serif;
   --headingfont-12: "Lateef", sans-serif;
 
   /* Body fonts */
-  --bodyfont-1: "Roboto", sans-serif; /* */
-  --bodyfont-2: "Sanchez", sans-serif; /* */
-  --bodyfont-3: "karma", sans-serif; /* */
-  --bodyfont-4: "Nunito", sans-serif; /* */
-  --bodyfont-5: "Proza Libre", sans-serif;
-  --bodyfont-6: "Libre Franklin", sans-serif; /* */
+  --bodyfont-1: "Roboto", sans-serif; /* light */ /* */
+  --bodyfont-2: "Sanchez", sans-serif; /* heavy */
+  --bodyfont-3: "karma", sans-serif; /* light */
+  --bodyfont-4: "Nunito", sans-serif; /* light */ /* */
+  --bodyfont-5: "Proza Libre", sans-serif; /* heavy */
+  --bodyfont-6: "Libre Franklin", sans-serif; /* light */ /* */
   --bodyfont-7: "Libre Baskerville", sans-serif;
-  --bodyfont-8: "Trirong", sans-serif; /* */
-  --bodyfont-9: "Rubik", sans-serif; /* */ /* */
-  --bodyfont-10: "Work Sans", sans-serif; /* */ /* */
-  --bodyfont-11: "Taviraj", sans-serif; /* */ /* */
+  --bodyfont-8: "Trirong", sans-serif; /* medium */
+  --bodyfont-9: "Rubik", sans-serif; /* light */ /* */
+  --bodyfont-10: "Work Sans", sans-serif; /* light */ /* */
+  --bodyfont-11: "Taviraj", sans-serif; /* light */ /* */
+  --bodyfont-12: "Lato", sans-serif; /* light */ /* */
 
   /* Fancy fonts */
   --fancyfont-1: "Eczar", sans-serif;
@@ -187,7 +345,13 @@
   --fancyfont-9: "Charm", sans-serif;
   --fancyfont-10: "Niconne", sans-serif;
 
-  /* Font weights */
+  /* 
+================================================================================================================================
+Font weights, Letter spaacings and font sizes
+================================================================================================================================
+*/
+
+  /* Font-wights */
   --font-weight-1: 400;
   --font-weight-2: 600;
 
@@ -211,13 +375,29 @@
   --font-size-12: 5rem;
   --font-size-13: 5.5rem;
 
-  /* Containers */
+  /* 
+================================================================================================================================
+Containers width
+================================================================================================================================
+*/
+
   --max-width-1: 1100px;
   --max-width-2: 1200px;
   --max-width-3: 1300px;
   --max-width-4: 1400px;
+  --max-width-5: 1500px;
+  --max-width-6: 1600px;
+  --max-width-7: 1700px;
+  --max-width-8: 1800px;
+  --max-width-9: 1900px;
+  --max-width-10: 2000px;
 
-  /* Transitions */
+  /* 
+================================================================================================================================
+Transitions
+================================================================================================================================
+*/
+
   --transition-1: 0.2s ease-in-out all;
   --transition-2: 0.3s ease-in-out all;
   --transition-3: 0.5s ease-in-out all;
@@ -225,7 +405,12 @@
   --transition-5: transform 0.3s ease-in;
   --transition-6: transform 0.5s ease-in;
 
-  /* TRANSFORMS */
+  /* 
+================================================================================================================================
+Transformations on the y and x axes
+================================================================================================================================
+*/
+
   /* Transforms on the Y axes*/
   --transform-11: translateY(-3px);
   --transform-12: translateY(-5px);
@@ -248,11 +433,22 @@
   --transform-28: translatex(7px);
   --transform-29: translatex(10px);
 
-  /* Alerts */
-  --alert-success: var(--stroke-300);
-  --alert-error: var(--red-300);
+  /* 
+================================================================================================================================
+Alerts
+================================================================================================================================
+*/
 
-  /* Box shadow*/
+  --alert-success: #b3d9b3;
+  --alert-error: #ff9999;
+  color: #c0f6fe;
+
+  /* 
+================================================================================================================================
+Box Shadows
+================================================================================================================================
+*/
+
   --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -260,15 +456,26 @@
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
-
-  /* Other variables */
-  --background-color: var(--grey-100);
-  --text-color: var(--dark-color);
 }
+/* ===== End of root ===== */
 
-/* Scrollbar */
+/* 
+================================================================================================================================
+================================================================================================================================
+================================================================================================================================
+================================================================================================================================
+================================================================================================================================
+*/
+
+/* 
+================================================================================================================================
+Scrollsbar
+================================================================================================================================
+*/
+
 body::-webkit-scrollbar {
-  width: 12px; /* width of the entire scrollbar */
+  width: 1vw; /* width of the entire scrollbar */
+  height: 1vh;
 }
 
 body::-webkit-scrollbar-track {
@@ -285,6 +492,12 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: var(--grey-600);
 }
 
+/* 
+================================================================================================================================
+Prototypes
+================================================================================================================================
+*/
+
 html {
   font-size: 100%;
 }
@@ -296,7 +509,7 @@ html {
 }
 
 *::after,
-::before {
+*::before {
   box-sizing: border-box;
 }
 
@@ -327,34 +540,55 @@ h1 {
 }
 
 h2 {
-  font-size: var(--font-size-6);
+  font-size: var(--font-size-7);
 }
 
 h3 {
+  font-size: var(--font-size-6);
+}
+
+h4 {
   font-size: var(--font-size-5);
 }
-h4 {
-  font-size: var(--font-size-1);
+
+h5 {
+  font-size: var(--font-size-2);
 }
 
 p {
-  margin: 1.25rem auto;
+  padding: 1.25rem 0;
   max-width: 600px;
 }
 
 a {
-  /* display: inline-block;  */
+  /* display: inline-block; */
   cursor: pointer;
   text-decoration: none;
-  color: var(--link-color); /* */
+  color: var(--text-color);
 }
 
-a:hover {
+a:hover,
+a:focus {
   color: var(--primary-700);
 }
 
 ul {
   list-style-type: none;
+}
+
+i {
+  padding: 10px;
+}
+
+code,
+pre {
+  background: var(--grey-900);
+  color: #fff;
+  padding: 10px;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 .img {
@@ -363,42 +597,32 @@ ul {
   object-fit: cover;
 }
 
-i {
-  padding: 10px;
+.select,
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  outline: none;
+  border: none;
 }
 
-.text-center {
-  text-align: center;
+/* Prototype override */
+.p-no-width {
+  max-width: 100%;
 }
 
-/* Containers */
-.container-1 {
-  max-width: var(--max-width-1);
-  overflow: auto;
-  margin: 0 auto;
-  padding: 0 20px;
+.no-radius {
+  border-radius: 0px;
 }
 
-.container-2 {
-  max-width: var(--max-width-2);
-  overflow: auto;
-  margin: 0 auto;
-  padding: 0 20px;
+.no-hover:hover {
+  transform: none;
 }
 
-.container-3 {
-  max-width: var(--max-width-3);
-  overflow: auto;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.container-4 {
-  max-width: var(--max-width-4);
-  overflow: auto;
-  margin: 0 auto;
-  padding: 0 20px;
-}
+/* 
+================================================================================================================================
+Top and side styles // Provides the margins on items on the top and side.
+================================================================================================================================
+*/
 
 /* Top */
 .top {
@@ -407,14 +631,191 @@ i {
 }
 
 .top-2 {
-  margin: 0 0 var(--font-size-1) 0;
+  margin: 0 0 1rem 0;
 }
 
 .top-3 {
-  margin: 20px 0 var(--font-size-1) 0;
+  margin: 20px 0 1rem 0;
 }
 
-/* Backgrounds */
+.top-4 {
+  margin: 20px 0;
+}
+
+.top-5 {
+  margin: 10px 0;
+}
+
+.side {
+  margin: 0;
+  padding: 0;
+}
+
+/* .side-2 {
+}
+
+.side-3 {
+} */
+
+.text-center {
+  text-align: center;
+}
+
+/* 
+================================================================================================================================
+Displays
+================================================================================================================================
+*/
+
+.flex {
+  display: flex;
+  height: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  /* grid-template-columns: repeat(2, 1fr); */
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+/* 
+================================================================================================================================
+Colors
+================================================================================================================================
+*/
+
+.light-color {
+  color: var(--light-color);
+}
+
+.primary-color {
+  color: var(--primary-500);
+}
+
+.secondary-color {
+  color: var(--secondary-600);
+}
+
+.tertiary-color {
+  color: var(--tertiary-500);
+}
+
+.stroke-color {
+  color: var(--stroke-500);
+}
+
+.dark-color {
+  color: var(--dark-color);
+}
+
+/* 
+================================================================================================================================
+Containers
+================================================================================================================================
+*/
+
+.container-1 {
+  max-width: var(--max-width-1);
+  overflow: auto;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.container-2 {
+  max-width: var(--max-width-2);
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.container-3 {
+  max-width: var(--max-width-3);
+  overflow: auto;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.container-4 {
+  max-width: var(--max-width-4);
+  overflow: auto;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.container-5 {
+  max-width: var(--max-width-5);
+  overflow: auto;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-6 {
+  max-width: var(--max-width-6);
+  overflow: auto;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-7 {
+  max-width: var(--max-width-7);
+  overflow: auto;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-8 {
+  max-width: var(--max-width-8);
+  overflow: auto;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-9 {
+  max-width: var(--max-width-9);
+  overflow: auto;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-10 {
+  max-width: var(--max-width-10);
+  overflow: auto;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 
+================================================================================================================================
+Backgrounds
+================================================================================================================================
+*/
+.bg-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  border-radius: 5px;
+  /* height: 200px; */
+}
+
 .bg-white {
   background-color: var(--light-color);
   color: var(--dark-color);
@@ -441,14 +842,14 @@ i {
 }
 
 .bg-dark {
-  background-color: var(--dark-color);
+  background-color: var(--bg-dark);
   color: var(--light-color);
 }
 
 .bg-primary a,
 .bg-secondary a,
 .bg-dark a {
-  color: #fff;
+  color: var(--light-color);
 }
 
 .bg-grey a,
@@ -456,32 +857,12 @@ i {
   color: var(--dark-color);
 }
 
-/* colors */
-.light-color {
-  color: var(--light-color);
-}
+/* 
+================================================================================================================================
+Buttons
+================================================================================================================================
+*/
 
-.primary-color {
-  color: var(--primary-500);
-}
-
-.secondary-color {
-  color: var(--secondary-600);
-}
-
-.tertiary-color {
-  color: var(--tertiary-500);
-}
-
-.stroke-color {
-  color: var(--stroke-500);
-}
-
-.dark-color {
-  color: var(--dark-color);
-}
-
-/* Buttons */
 .btn {
   display: inline-block;
   border: none;
@@ -490,7 +871,7 @@ i {
   text-transform: capitalize;
   border-radius: 5px;
   box-shadow: var(--shadow-1);
-  transition: var(--transition-2);
+  transition: var(--transition-5);
   text-align: center;
 }
 
@@ -501,8 +882,8 @@ i {
 }
 
 .btn-transparent {
-  background-color: #fff;
-  border: 1px solid #fff;
+  background-color: var(--light-color);
+  border: 1px solid var(--light-color);
   color: var(--dark-color);
 }
 
@@ -511,10 +892,11 @@ i {
 }
 
 .btn-rounded {
-  border-radius: 40px;
+  border-radius: 30px;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   transform: scale(0.98);
 }
 
@@ -522,24 +904,40 @@ i {
   transform: none;
 }
 
-/* Button sizes  */ /* The default size of a button is thin*/
+/* 
+================================================================================================================================
+Button sizes || The default size of any button is thin
+================================================================================================================================
+*/
+
+.btn-xthin {
+  padding: 5px 15px;
+}
+
 .btn-thin {
   padding: 10px 30px;
 }
 
 .btn-medium {
   padding: 15px 40px;
+  font-size: var(--font-size-1);
 }
 
 .btn-lg {
   padding: 20px 40px;
+  font-size: var(--font-size-1);
 }
 
-.btn-lg-x {
+.btn-xw {
   padding: 10px 60px;
 }
 
-/* Button colors */
+/* 
+================================================================================================================================
+Button Colors
+================================================================================================================================
+*/
+
 .btn-primary {
   background-color: var(--primary-500);
   color: var(--light-color);
@@ -560,58 +958,93 @@ i {
   color: var(--light-color);
 }
 
+.btn-error {
+  background-color: var(--red-400);
+  /* color: var(--light-color); */
+}
+
 .btn-primary a,
 .btn-secondary a,
+.btn-error a,
 .btn-dark a {
   color: #fff;
 }
 
 .btn-outline a,
 .btn-tertiary a,
+.btn-error a,
 .btn-transparent a {
   color: var(--dark-color);
 }
 
-/* Alerts */
+/* 
+================================================================================================================================
+Alerts
+================================================================================================================================
+*/
 .alert {
-  margin: 20px 0px;
-  border: 2px;
-  font-weight: var(--font-weight-1);
-  color: #fff;
-  letter-spacing: var(--letterspacing-2);
-}
-
-.alert-error {
-  background-color: var(--alert-error);
+  padding: 5px 20px;
+  border-radius: 2px;
+  max-width: 600px;
+  box-shadow: var(--shadow-4);
 }
 
 .alert-success {
-  background-color: var(--alert-success);
+  background-color: var(--stroke-200);
+  border: 1px solid var(--stroke-500);
+  color: var(--stroke-700);
 }
 
-.alert i {
-  margin: 5px;
-  padding: 10px;
-  background-color: var(--grey-500);
-  border-radius: 50%;
-  color: var(--grey-700);
+.alert-error {
+  background-color: var(--red-400);
+  border: 1px solid var(--red-700);
+  color: var(--grey-100);
 }
+
+/* 
+================================================================================================================================
+Cards and pop-ups
+================================================================================================================================
+*/
 
 .card {
+  /* width: 500px; */
   background-color: #fff;
   color: #333;
   padding: 20px;
   margin: 10px;
   border-radius: 10px;
-  width: 500px;
   box-shadow: var(--shadow-4);
 }
 
-/* Forms */
+.pop-up {
+  padding: 5px 20px;
+  border-radius: 5px;
+  width: 400px;
+  box-shadow: var(--shadow-4);
+}
+
+.pop-up-success {
+  background-color: var(--base-200);
+  border: 1px solid var(--base-500);
+}
+
+.pop-up-error {
+  background-color: var(--red-400);
+  border: 1px solid var(--red-700);
+  color: var(--light-color);
+}
+
+/* 
+================================================================================================================================
+Forms
+================================================================================================================================
+*/
+
 .form {
   position: relative;
-  background-color: #fff;
-  color: #333;
+  background-color: var(--light-color);
+  color: var(--less-dark);
   padding: 20px;
   margin: 10px;
   border-radius: 10px;
@@ -646,8 +1079,8 @@ i {
   outline: none;
 }
 
-/* Form-2 */
-.form-2 {
+/* ========== Form-2 ========== */
+/* .form-2 {
   position: relative;
   background-color: #fff;
   color: #333;
@@ -680,131 +1113,212 @@ i {
 
 .form-info input {
   font-size: var(--font-size-1);
+} */
+
+.form-2 {
+  position: relative;
+  background-color: var(--light-color);
+  color: var(--less-dark);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 550px;
+  box-shadow: var(--shadow-2);
+  z-index: 100;
 }
 
-/* Displays */
-.flex {
-  display: flex;
-  height: 100%;
-  gap: 30px;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+.form-info {
+  margin: 30px 0;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Text sizes */
-.sm {
+.form-info input {
+  outline: none;
+  width: 100%;
+  height: 40px;
+  border: 2px solid var(--grey-400);
+  border-radius: 2px;
+  font-family: var(--bodyfont-6);
   font-size: var(--font-size-1);
 }
 
-.lead {
-  font-size: var(--font-size-4);
+.form-info label {
+  text-transform: capitalize;
+  font-size: var(--font-size-3);
+  font-weight: 500;
 }
 
-.md {
-  font-size: var(--font-size-6);
+.form-info label,
+.form-info input {
+  display: block;
+  padding: 5px 0;
 }
 
-.lg {
-  font-size: var(--font-size-8);
+.form-2 .button {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
 }
 
-.xl {
-  font-size: var(--font-size-10);
+.form-info .btn-medium {
+  width: 300px;
 }
 
-/* Margin */
-.my-1 {
-  margin: var(--font-size-1) 0;
+/* ========= form-3 ========== */
+.form-3 {
+  position: relative;
+  color: var(--less-dark);
+  padding: 20px;
+  margin: 10px;
+  width: 550px;
+  z-index: 100;
 }
 
-.my-2 {
-  margin: var(--font-size-5) 0;
+.form-3 h2 {
+  text-align: center;
 }
 
-.my-3 {
-  margin: var(--font-size-6) 0;
+.form-details {
+  padding: 10px 0;
+  margin: 10px 0;
 }
 
-.my-4 {
-  margin: var(--font-size-8) auto;
+.form-details label {
+  text-transform: capitalize;
+  font-size: var(--font-size-3);
+  font-weight: 500;
 }
 
-.my-5 {
-  margin: var(--font-size-10) auto;
+.form-details input {
+  outline: none;
+  width: 100%;
+  height: 40px;
+  border: 2px solid var(--grey-400);
+  border-radius: 30px;
+  font-family: var(--bodyfont-6);
+  font-size: var(--font-size-1);
+  /* padding-left: 5px;
+  border-radius: 2px;
+  height: 30px;
+  font-size: 0.9rem; */
 }
 
-.m-1 {
-  margin: var(--font-size-1);
+.form-details input,
+.form-details label {
+  display: block;
+  text-align: center;
 }
 
-.m-2 {
-  margin: var(--font-size-5);
+.form-3 .button {
+  display: flex;
+  justify-content: center;
 }
 
-.m-3 {
-  margin: var(--font-size-6);
+.form-3 .btn {
+  width: 300px;
 }
 
-.m-4 {
-  margin: var(--font-size-8);
+/* ========== Form-report =========== */
+.form-report {
+  position: relative;
+  color: var(--less-dark);
+  padding: 20px;
+  margin: 10px;
+  /* width: 550px; */
+  z-index: 100;
 }
 
-.m-5 {
-  margin: var(--font-size-10);
+.report-info {
+  margin: 10px 0;
+  padding: 10px 0;
 }
 
-/* Padding */
-.py-1 {
-  padding: var(--font-size-1) 0;
+.report-info label {
+  margin-right: 10px;
+  padding-right: 20px;
 }
 
-.py-2 {
-  padding: var(--font-size-5) 0;
+.report-info input {
+  outline: none;
+  /* width: 100%; */
+  height: 30px;
+  border: 2px solid var(--grey-400);
+  border-radius: 2px;
+  font-family: var(--bodyfont-6);
+  font-size: var(--font-size-1);
 }
 
-.py-3 {
-  padding: var(--font-size-6) 0;
+/* .report-info label,
+.report-info input {
+} */
+
+.report-info .select option {
+  font-family: var(--bodyfont-6);
 }
 
-.py-4 {
-  padding: var(--font-size-8) 0;
+/* 
+================================================================================================================================
+Tables
+================================================================================================================================
+*/
+
+.table {
+  background-color: var(--grey-200);
+  margin: 20px 0;
+  padding: 40px;
+  min-width: 400px;
+  border: none;
+  border-radius: 5px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: var(--shadow-2);
 }
 
-.py-5 {
-  padding: var(--font-size-10) 0;
+.table-head-row {
+  background-color: var(--tint-400);
 }
 
-.p-1 {
-  padding: var(--font-size-1);
+.column-title {
+  font-weight: bold;
+  text-align: left;
 }
 
-.p-2 {
-  padding: var(--font-size-5);
+.column-title,
+.table-detail {
+  padding: 10px;
+  border-bottom: 1px solid var(--grey-500);
+  /* border-left: 1px solid var(--grey-500); */
 }
 
-.p-3 {
-  padding: var(--font-size-6);
+.table-detail {
+  font-size: 15px;
 }
 
-.p-4 {
-  padding: var(--font-size-8);
+.table-detail:first-child,
+.column-title:first-child {
+  padding-left: 30px;
+  /* border-left: none; */
 }
 
-.p-5 {
-  padding: var(--font-size-10);
+.table-detail:last-child,
+.column-title:last-child {
+  padding-right: 30px;
 }
 
-/* Loading */
+.table-body-row:nth-of-type(even) {
+  background-color: var(--grey-400);
+}
+
+.table-body-row:last-of-type {
+  border-bottom: 3px solid var(--tint-600);
+}
+
+/* 
+================================================================================================================================
+Keyframes and Loading
+================================================================================================================================
+*/
+
 @keyframes spinner {
   to {
     transform: rotate(360deg);
@@ -838,4 +1352,251 @@ i {
   width: 3rem;
   height: 2rem;
   border: 5px solid var(--grey-900);
+}
+
+/* 
+================================================================================================================================
+Text Sizes
+================================================================================================================================
+*/
+
+.sm {
+  font-size: var(--font-size-1);
+}
+
+.lead {
+  font-size: var(--font-size-4);
+}
+
+.md {
+  font-size: var(--font-size-6);
+}
+
+.lg {
+  font-size: var(--font-size-8);
+}
+
+.xl {
+  font-size: var(--font-size-10);
+}
+
+/* 
+================================================================================================================================
+Margins
+================================================================================================================================
+*/
+/* ============ Y-axis ============ */
+.my-1 {
+  margin: var(--font-size-1) 0;
+}
+
+.my-2 {
+  margin: var(--font-size-5) 0;
+}
+
+.my-3 {
+  margin: var(--font-size-6) 0;
+}
+
+.my-4 {
+  margin: var(--font-size-8) 0;
+}
+
+.my-5 {
+  margin: var(--font-size-10) 0;
+}
+
+/* ============ X-axis ============ */
+.mx-1 {
+  margin: 0 var(--font-size-1);
+}
+
+.mx-2 {
+  margin: 0 var(--font-size-5);
+}
+
+.mx-3 {
+  margin: 0 var(--font-size-6);
+}
+
+.mx-4 {
+  margin: 0 var(--font-size-8);
+}
+
+.mx-5 {
+  margin: 0 var(--font-size-10);
+}
+
+/* ============ Top ============ */
+.mt-1 {
+  margin-top: var(--font-size-1);
+}
+
+.mt-2 {
+  margin-top: var(--font-size-5);
+}
+
+.mt-3 {
+  margin-top: var(--font-size-6);
+}
+
+.mt-4 {
+  margin-top: var(--font-size-8);
+}
+
+.mt-5 {
+  margin-top: var(--font-size-10);
+}
+
+/* ============ Bottom ============ */
+.mb-1 {
+  margin-bottom: var(--font-size-1);
+}
+
+.mb-2 {
+  margin-bottom: var(--font-size-5);
+}
+
+.mb-3 {
+  margin-bottom: var(--font-size-6);
+}
+
+.mb-4 {
+  margin-bottom: var(--font-size-8);
+}
+
+.mb-5 {
+  margin-bottom: var(--font-size-10);
+}
+
+/* ============ X and y-axis ============ */
+.m-1 {
+  margin: var(--font-size-1);
+}
+
+.m-2 {
+  margin: var(--font-size-5);
+}
+
+.m-3 {
+  margin: var(--font-size-6);
+}
+
+.m-4 {
+  margin: var(--font-size-8);
+}
+
+.m-5 {
+  margin: var(--font-size-10);
+}
+
+/* 
+================================================================================================================================
+Paddings
+================================================================================================================================
+*/
+
+/* ============ y-axis ============ */
+.py-1 {
+  padding: var(--font-size-1) 0;
+}
+
+.py-2 {
+  padding: var(--font-size-5) 0;
+}
+
+.py-3 {
+  padding: var(--font-size-6) 0;
+}
+
+.py-4 {
+  padding: var(--font-size-8) 0;
+}
+
+.py-5 {
+  padding: var(--font-size-10) 0;
+}
+
+/* ============ x-axis ============ */
+.px-1 {
+  padding: 0 var(--font-size-1);
+}
+
+.px-2 {
+  padding: 0 var(--font-size-5);
+}
+
+.px-3 {
+  padding: 0 var(--font-size-6);
+}
+
+.px-4 {
+  padding: 0 var(--font-size-8);
+}
+
+.px-5 {
+  padding: 0 var(--font-size-10);
+}
+
+/* ============ Top ============ */
+.pt-1 {
+  padding-top: var(--font-size-1);
+}
+
+.pt-2 {
+  padding-top: var(--font-size-5);
+}
+
+.pt-3 {
+  padding-top: var(--font-size-6);
+}
+
+.pt-4 {
+  padding-top: var(--font-size-8);
+}
+
+.pt-5 {
+  padding-top: var(--font-size-10);
+}
+
+/* ============ Bottom ============ */
+.pb-1 {
+  padding-bottom: var(--font-size-1);
+}
+
+.pb-2 {
+  padding-bottom: var(--font-size-5);
+}
+
+.pb-3 {
+  padding-bottom: var(--font-size-6);
+}
+
+.pb-4 {
+  padding-bottom: var(--font-size-8);
+}
+
+.pb-5 {
+  padding-bottom: var(--font-size-10);
+}
+
+/* ============ x and y-axis ============ */
+.p-1 {
+  padding: var(--font-size-1);
+}
+
+.p-2 {
+  padding: var(--font-size-5);
+}
+
+.p-3 {
+  padding: var(--font-size-6);
+}
+
+.p-4 {
+  padding: var(--font-size-8);
+}
+
+.p-5 {
+  padding: var(--font-size-10);
 }
