@@ -24,21 +24,26 @@ Navbar
 
 .navbar ul a,
 .navbar-respond ul a {
-  color: var(--faded-500);
+  color: var(--grey-600);
   font-size: 17px;
   padding: 10px;
 }
 
-.navbar ul a:hover,
-.navbar-respond ul a:hover {
+.navbar ul a:hover {
   border-bottom: 2px solid var(--secondary-400);
   color: var(--grey-600);
+}
+
+.navbar .btn,
+.navbar-respond .btn {
+  background-color: var(--faded-500);
+  border: none;
 }
 
 .navbar .btn:hover,
 .navbar-respond .btn:hover {
   border: none;
-  background-color: var(--faded-500);
+  background-color: var(--secondary-500);
   color: var(--light-color);
 }
 
@@ -61,13 +66,16 @@ Navbar Repond
 */
 .navbar-respond {
   display: none;
-  height: 180px;
   padding-top: 20px;
+}
+
+.navbar-respond .container-3 {
+  overflow: visible;
 }
 
 .navbar-respond .flex {
   justify-content: space-between;
-  max-width: 700px;
+  max-width: 900px;
   margin: auto;
 }
 
@@ -78,8 +86,51 @@ Navbar Repond
   align-items: center;
 }
 
-.navbar-respond .block {
+.dropdown {
+  position: absolute;
+  opacity: 100000;
+
+  right: 10px;
+}
+
+.dropdown.card {
+  border-radius: 5px;
+  width: 300px;
+  background-color: var(--grey-200);
+}
+
+.dropdown li {
+  padding: 5px 0;
+  margin: 5px;
+  border-bottom: 1px solid var(--complement-500);
+  box-shadow: var(--shadow-5);
+}
+
+.dropdown li a {
+  color: var(--grey-800);
+  font-family: var(--bodyfont-1);
+}
+
+.dropdown li a:hover {
+  color: var(--faded-500);
+}
+
+.navbar-respond i {
+  color: var(--faded-700);
+}
+
+.dropdown-links {
   display: flex;
+  flex-direction: column;
+}
+
+/* .block.flex-block {
+  display: flex;
+} */
+
+/* .navbar-respond .block {
+  display: flex;
+  position: relative;
   justify-content: center;
   margin-top: 10px;
   padding: 10px 0px;
@@ -91,19 +142,24 @@ Navbar Repond
 .navbar-respond .block li {
   font-size: 18px;
   margin: 0px 10px;
-}
+} */
 
 /* 
 ================================================================================================================================
 Showcase
 ================================================================================================================================
 */
+.show-container {
+  opacity: 10;
+}
+
 .showcase {
   background-image: url("../images/code16.jpg");
   margin: 0;
   padding: 20px 0 0 0;
   height: 500px;
   width: auto;
+  /* opacity: 1; */
 }
 
 .showcase h2 {
@@ -141,6 +197,29 @@ Analytic
 
 /* 
 ================================================================================================================================
+Repond
+================================================================================================================================
+*/
+.respond {
+  background-color: var(--grey-100);
+}
+
+.respond img {
+  width: 450px;
+  height: 100%;
+}
+
+.respond .grid {
+  grid-template-columns: 3fr 5fr;
+}
+
+.respond h1 {
+  font-family: var(--headingfont-4);
+  font-size: var(--font-size-8);
+}
+
+/* 
+================================================================================================================================
 Span
 ================================================================================================================================
 */
@@ -169,16 +248,33 @@ Show Head
 }
 
 .show-head .grid {
-  grid-template-columns: 3fr 4fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .show-head .img {
   padding: 30px 0;
-  height: 350px;
 }
 
 .show-head h1 {
   font-family: var(--headingfont-2);
+}
+
+/* 
+================================================================================================================================
+Integrate
+================================================================================================================================
+*/
+.integrate .grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.integrate .img {
+  width: 550px;
+  height: 100%;
+}
+
+.integrate h1 {
+  text-align: left;
 }
 
 /* 
@@ -219,6 +315,24 @@ Demo
   border-radius: 5px;
   padding: 40px auto;
   height: 500px;
+}
+
+/* 
+================================================================================================================================
+Live-Cards
+================================================================================================================================
+*/
+.live-cards .grid {
+  grid-template-columns: 3fr 4fr;
+}
+
+.live-cards .img {
+  height: 100%;
+}
+
+.live-cards h1 {
+  font-weight: 500;
+  font-family: var(--headingfont-1);
 }
 
 /* 
@@ -276,28 +390,6 @@ Research
 
 .research h1 {
   font-family: var(--headingfont-2);
-}
-
-/* 
-================================================================================================================================
-Repond
-================================================================================================================================
-*/
-.respond {
-  background-color: var(--grey-200);
-}
-
-.respond .img {
-  height: 100%;
-}
-
-.respond .grid {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.respond h1 {
-  font-family: var(--headingfont-4);
-  font-size: var(--font-size-10);
 }
 
 /* 
@@ -411,23 +503,61 @@ Media queries and reponsiveness
 @media (max-width: 1105px) {
   .navbar-respond {
     display: inherit;
+    height: 100px;
   }
 
   .navbar {
     display: none;
   }
+
+  .showcase {
+    height: 400px;
+  }
 }
 
-@media (max-width: 945px) {
+@media (max-width: 1100px) {
+  .respond img {
+    width: 400px;
+    height: 100%;
+  }
+
+  .integrate .img {
+    width: 550px;
+    height: 100%;
+  }
+}
+
+@media (max-width: 950px) {
   .grid,
   .show-head .grid,
   .demo .grid,
-  .info .grid {
+  .info .grid,
+  .integrate .grid,
+  .live-cards .grid,
+  .respond .grid {
     grid-template-columns: 1fr;
+    justify-content: center;
   }
 
-  .demo .grid .form {
-    justify-self: center;
+  .respond .img,
+  .integrate .img,
+  .info .img,
+  .show-head .img,
+  .live-cards .img {
+    margin: 0 auto;
+  }
+
+  .integrate .img {
+    width: 450px;
+  }
+
+  .live-cards .img {
+    width: 550px;
+  }
+
+  .info .img,
+  .show-head .img {
+    width: 500px;
   }
 
   .languages .grid {
@@ -441,9 +571,9 @@ Media queries and reponsiveness
 }
 
 @media (max-width: 710px) {
-  .navbar-respond {
+  /* .navbar-respond {
     height: 250px;
-  }
+  } */
 }
 
 @media (max-width: 655px) {
