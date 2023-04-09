@@ -82,7 +82,7 @@ Navbar Repond
 .navbar-respond .dashes {
   display: flex;
   gap: 10px;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 
@@ -151,6 +151,7 @@ Showcase
 */
 .show-container {
   opacity: 10;
+  padding: 10px 0;
 }
 
 .showcase {
@@ -244,6 +245,7 @@ Show Head
 ================================================================================================================================
 */
 .show-head {
+  padding: 30px 0;
   background-color: var(--grey-200);
 }
 
@@ -500,6 +502,12 @@ Footer
 Media queries and reponsiveness
 ================================================================================================================================
 */
+@media (max-width: 1110px) {
+  .footer {
+    height: 1000px;
+  }
+}
+
 @media (max-width: 1105px) {
   .navbar-respond {
     display: inherit;
@@ -512,6 +520,10 @@ Media queries and reponsiveness
 
   .showcase {
     height: 400px;
+  }
+
+  .footer {
+    height: 1000px;
   }
 }
 
@@ -545,6 +557,9 @@ Media queries and reponsiveness
   .show-head .img,
   .live-cards .img {
     margin: 0 auto;
+    display: grid;
+    justify-self: center;
+    width: 300px;
   }
 
   .integrate .img {
@@ -570,10 +585,10 @@ Media queries and reponsiveness
   }
 }
 
-@media (max-width: 710px) {
-  /* .navbar-respond {
-    height: 250px;
-  } */
+@media (max-width: 725px) {
+  .showcase {
+    height: 300px;
+  }
 }
 
 @media (max-width: 655px) {
@@ -592,5 +607,77 @@ Media queries and reponsiveness
 @media (max-width: 565px) {
   .demo .form {
     width: 400px;
+  }
+
+  .showcase {
+    height: 250px;
+  }
+
+  .integrate .img {
+    width: 400px;
+  }
+
+  .live-cards .img {
+    width: 500px;
+  }
+
+  .footer {
+    height: 1500px;
+  }
+}
+
+@media (max-width: 580px) {
+  .show-head .img {
+    width: 450px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (max-width: 530px) {
+  .show-head .img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar-flex.flex {
+    flex-direction: column;
+  }
+
+  .navbar-respond {
+    height: 170px;
+  }
+
+  .dashes {
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .showcase {
+    height: 200px;
+  }
+
+  .show-head .img {
+    display: grid;
+    justify-self: center;
+    width: 350px;
+  }
+}
+
+@media (max-width: 400px) {
+  .showcase {
+    height: 150px;
+  }
+}
+
+@media (max-width: 435px) {
+  .show-head .img {
+    display: grid;
+    justify-self: center;
+    width: 300px;
   }
 }
