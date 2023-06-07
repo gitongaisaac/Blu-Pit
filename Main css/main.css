@@ -592,7 +592,7 @@ pre {
 }
 
 .img {
-  width: 100%;
+  max-width: 100%;
   display: block;
   object-fit: cover;
 }
@@ -1008,7 +1008,7 @@ Cards and pop-ups
 */
 
 .card {
-  /* width: 500px; */
+  max-width: 500px;
   background-color: #fff;
   color: #333;
   padding: 20px;
@@ -1020,7 +1020,7 @@ Cards and pop-ups
 .pop-up {
   padding: 5px 20px;
   border-radius: 5px;
-  width: 400px;
+  max-width: 400px;
   box-shadow: var(--shadow-4);
 }
 
@@ -1048,7 +1048,7 @@ Forms
   padding: 20px;
   margin: 10px;
   border-radius: 10px;
-  width: 450px;
+  max-width: 450px;
   box-shadow: var(--shadow-4);
   z-index: 100;
 }
@@ -1079,42 +1079,6 @@ Forms
   outline: none;
 }
 
-/* ========== Form-2 ========== */
-/* .form-2 {
-  position: relative;
-  background-color: #fff;
-  color: #333;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 10px;
-  width: 450px;
-  box-shadow: var(--shadow-4);
-  z-index: 100;
-}
-
-.form-info {
-  margin: 20px 0;
-  padding: 15px 0;
-}
-
-.form-info input[type="text"],
-.form-info input[type="email"] {
-  border: 2px #b4becb solid;
-  border-radius: 3px;
-  width: 100%;
-  height: 40px;
-  background-color: var(--grey-200);
-}
-
-.form-info input[type="text"]:focus,
-.form-info input[type="email"]:focus {
-  outline: none;
-}
-
-.form-info input {
-  font-size: var(--font-size-1);
-} */
-
 .form-2 {
   position: relative;
   background-color: var(--light-color);
@@ -1122,7 +1086,7 @@ Forms
   padding: 20px;
   margin: 10px;
   border-radius: 10px;
-  width: 550px;
+  max-width: 550px;
   box-shadow: var(--shadow-2);
   z-index: 100;
 }
@@ -1150,7 +1114,7 @@ Forms
 .form-info label,
 .form-info input {
   display: block;
-  padding: 5px 0;
+  padding: 5px;
 }
 
 .form-2 .button {
@@ -1161,7 +1125,7 @@ Forms
 }
 
 .form-info .btn-medium {
-  width: 300px;
+  max-width: 300px;
 }
 
 /* ========= form-3 ========== */
@@ -1170,7 +1134,7 @@ Forms
   color: var(--less-dark);
   padding: 20px;
   margin: 10px;
-  width: 550px;
+  max-width: 550px;
   z-index: 100;
 }
 
